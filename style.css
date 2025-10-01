@@ -1,0 +1,32 @@
+ p {
+     font-family: Arial;
+ }
+
+ h1,
+ h2 {
+     color: fuchsia;
+ }
+
+ #paragraphe1 {
+    font-size:larger;
+ }
+
+ .surlignage {
+    background-color:yellow;
+    border:1px solid orange;
+ }
+ .couleur-de-texte-bleu {
+    color: blue;
+ }
+ p .couleur-de-texte-bleu { /*on vise toute balise portant la classe "couleur-de-texte-bleu" et se trouvant DANS un paragraphe (l'espace sert strictement a ca dans un selecteur) */
+    text-decoration: line-through;
+ }
+ /* Ce qui est different de : */
+ p.couleur-de-texte-bleu {
+    /*on vise tout paragraphe portant la classe
+    "couleur-de-texte-bleu" */
+ }
+ /* on peut aussi viser ces éléments a condition qu'ils soient dans certain "etat" (par exemple survolés par la souris) : */
+ .surlignage:hover {
+    background-color: blueviolet;
+ }
